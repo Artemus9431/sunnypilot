@@ -19,7 +19,7 @@ class CarState(CarStateBase):
     self.lkas_allowed_speed = False
     self.lkas_init_complete = False
     self.lkas_init_frames = 0
-    
+
     self.distance_button = 0
     self.accel_button = 0
     self.decel_button = 0
@@ -92,7 +92,7 @@ class CarState(CarStateBase):
         self.lkas_init_complete = True
       else:
         self.lkas_init_frames += 1
-    
+
     # TODO: the signal used for available seems to be the adaptive cruise signal, instead of the main on
     #       it should be used for carState.cruiseState.nonAdaptive instead
     ret.cruiseState.available = cp.vl["CRZ_CTRL"]["CRZ_AVAILABLE"] == 1
