@@ -18,7 +18,7 @@ class CarState(CarStateBase):
     self.acc_active_last = False
     self.lkas_allowed_speed = False
     self.lkas_init_complete = False
-    self.lkas_init_frames = 0    
+    self.lkas_init_frames = 0
 
     self.distance_button = 0
     self.accel_button = 0
